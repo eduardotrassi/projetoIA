@@ -1,0 +1,62 @@
+:root {
+    --cor-fundo: #121015;        
+    --cor-principal: #1E1B23;     
+    --cor-secundaria: #3A2F4A;    
+    --cor-destaque: #BB86FC;      
+    --cor-texto: #EAE6F2;           
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h1 {
+    color: var(--cor-destaque);
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-destaque);
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    transform: scale(1.05);
+}
